@@ -26,6 +26,7 @@ export default defineConfig(({ mode }) => {
 
   return {
     base,
+    cacheDir: process.env.VITE_TEMP_DIR || '/tmp/.vite-cache',
     define: { process },
     envPrefix: [`VITE_`, `CF_`],
     plugins: [

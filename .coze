@@ -7,4 +7,4 @@ run = ["pnpm", "--filter", "@md/web", "preview", "--port", "5000", "--host"]
 
 [deploy]
 build = ["pnpm", "install"]
-run = ["pnpm", "--filter", "@md/web", "preview", "--port", "5000", "--host"]
+run = ["sh", "-c", "VITE_TEMP_DIR=/tmp/.vite-temp pnpm --filter @md/web preview --port 5000 --host"]
