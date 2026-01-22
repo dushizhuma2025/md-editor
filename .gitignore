@@ -41,3 +41,6 @@ pnpm-debug.log*
 
 # Coze
 .cozeproj/
+
+# Wxt (browser extension auto-generated)
+.wxt/
