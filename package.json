@@ -7,10 +7,10 @@
   "homepage": "https://github.com/doocs/md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/doocs/md"
+    "url": "https://github.com/dushizhuma2025/md-editor"
   },
   "bugs": {
-    "url": "https://github.com/doocs/md/issues"
+    "url": "https://github.com/dushizhuma2025/md-editor/issues"
   },
   "engines": {
     "node": ">=22.16.0"

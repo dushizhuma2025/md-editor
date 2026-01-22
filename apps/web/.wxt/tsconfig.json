@@ -3,6 +3,12 @@
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "Bundler",
+    "noEmit": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "skipLibCheck": true,
     "paths": {
       "@": ["../src"],
       "@/*": ["../src/*"],
@@ -16,13 +22,7 @@
       "/src/main.ts/*": ["../src/main.ts/*"],
       "/src/sidepanel.ts": ["../src/sidepanel.ts"],
       "/src/sidepanel.ts/*": ["../src/sidepanel.ts/*"]
-    },
-    "resolveJsonModule": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true
+    }
   },
   "include": [
     "../**/*",
