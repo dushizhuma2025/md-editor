@@ -12,9 +12,11 @@ if [ ! -d "dist" ]; then
   pnpm run build
 fi
 
-# 设置缓存目录
+# 设置环境变量
 export VITE_TEMP_DIR=/tmp/.vite-cache
+export SERVER_ENV=PREVIEW
 
 # 启动预览服务器（使用 exec 替换当前进程，确保信号正确传递）
 echo "Starting vite preview server on port 5000..."
+echo "Serving from dist/ at http://0.0.0.0:5000/md/"
 exec pnpm exec vite preview --port 5000 --host --strictPort
