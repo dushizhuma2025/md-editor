@@ -7,4 +7,4 @@ run = ["pnpm", "--filter", "@md/web", "preview", "--port", "5000", "--host"]
 
 [deploy]
 build = ["sh", "-c", "pnpm install --ignore-scripts && cd apps/web && pnpm run build"]
-run = ["sh", "-c", "cd apps/web && ls -la dist && VITE_TEMP_DIR=/tmp/.vite-cache pnpm exec vite preview --port 5000 --host --strictPort"]
+run = ["sh", "scripts/start-preview.sh"]
