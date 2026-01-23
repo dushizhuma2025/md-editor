@@ -22,6 +22,15 @@ pnpm web dev
 
 ### 构建步骤
 
+**方式 1：使用构建脚本（推荐）**
+
+```bash
+# 使用专用构建脚本
+bash scripts/build.sh
+```
+
+**方式 2：手动构建**
+
 ```bash
 # 跳过 postinstall 脚本（避免 Git hooks 问题）
 pnpm install --ignore-scripts
