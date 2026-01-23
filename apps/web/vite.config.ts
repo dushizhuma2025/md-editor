@@ -25,9 +25,17 @@ const base = isNetlify || isCfWorkers || isCfPages || isPreview ? `/` : isUTools
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd())
 
+  // 强制使用 /tmp 目录作为缓存目录，避免权限问题
+  const cacheDir = process.env.VITE_TEMP_DIR || '/tmp/.vite-cache'
+
+  // 确保缓存目录存在
+  import('node:fs/promises').then(fs => {
+    fs.mkdir(cacheDir, { recursive: true }).catch(() => {})
+  })
+
   return {
     base,
-    cacheDir: process.env.VITE_TEMP_DIR || '/tmp/.vite-cache',
+    cacheDir,
     define: { process },
     envPrefix: [`VITE_`, `CF_`],
     plugins: [
