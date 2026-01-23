@@ -6,5 +6,5 @@ build = ["pnpm", "install"]
 run = ["pnpm", "--filter", "@md/web", "preview", "--port", "5000", "--host"]
 
 [deploy]
-build = ["sh", "-c", "pnpm install --ignore-scripts && cd apps/web && pnpm run build"]
-run = ["sh", "scripts/start-preview.sh"]
+build = ["bash", "scripts/build.sh"]
+run = ["bash", "scripts/start-preview.sh"]
