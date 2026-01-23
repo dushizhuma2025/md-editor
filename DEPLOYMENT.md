@@ -42,14 +42,21 @@ pnpm run build
 
 ### 启动预览服务器
 
-```bash
-# 使用专用启动脚本
-bash scripts/start-preview.sh
+**方式 1：使用简单 HTTP 服务器（推荐）**
 
-# 或手动启动
+```bash
+# 使用专用启动脚本（使用 Node.js 原生 HTTP 服务器）
+bash scripts/start-preview.sh
+```
+
+**方式 2：使用 Vite 预览服务器**
+
+```bash
+# 手动启动（需要确保 node_modules 可写）
 cd apps/web
 export VITE_TEMP_DIR=/tmp/.vite-cache
 export SERVER_ENV=PREVIEW
+mkdir -p /tmp/.vite-cache
 pnpm exec vite preview --port 5000 --host --strictPort
 ```
 
