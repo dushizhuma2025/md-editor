@@ -33,11 +33,17 @@ function onRedirect(url: string) {
       </DialogHeader>
       <div class="text-center">
         <h3>一款高度简洁的微信 Markdown 编辑器</h3>
-        <p>扫码关注公众号 Doocs，原创技术内容第一时间推送！</p>
+        <p>
+          访问<a 
+            href="https://www.ayi001.xyz" 
+            target="_blank" 
+            class="text-blue-500 hover:text-blue-600 underline"
+          >www.ayi001.xyz</a>，获取更多AI工具、教程、资源
+        </p>
         <img
           class="mx-auto my-5"
-          src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/gh/doocs/md/images/1648303220922-7e14aefa-816e-44c1-8604-ade709ca1c69.png"
-          alt="Doocs Markdown 编辑器"
+          src="https://n8jmply6oexq.meoo.fun/sb-api/storage/v1/object/public/ayi_oss/public/1778544276186-touxiang_ayi_cat_touming.png"
+          alt="阿一AI站"
           style="width: 40%"
         >
       </div>
