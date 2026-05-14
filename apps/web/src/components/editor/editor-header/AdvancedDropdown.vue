@@ -21,7 +21,7 @@ const uiStore = useUIStore()
 const importMarkdownContent = useImportMarkdownContent()
 
 function openAYISite() {
-  window.open('https://ayi-ai.com', '_blank')
+  window.open('https://www.ayi001.xyz', '_blank')
 }
 
 function openAboutDialog() {

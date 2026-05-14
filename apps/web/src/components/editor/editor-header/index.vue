@@ -248,7 +248,11 @@ function togglePreviewMode() {
     <!-- 左侧区域：Logo、名称和菜单 -->
     <div class="flex items-center">
       <!-- Logo、网站名称和Slogan -->
-      <div class="flex items-center gap-4 mr-6">
+      <a
+        href="https://www.ayi001.xyz"
+        target="_blank"
+        class="flex items-center gap-4 mr-6 cursor-pointer hover:opacity-80 transition-opacity"
+      >
         <!-- Logo -->
         <img
           src="/AYI_logo_364x364_touming.png"
@@ -264,7 +268,7 @@ function togglePreviewMode() {
             Faster, Better, Easier with AI.
           </div>
         </div>
-      </div>
+      </a>
 
       <!-- 桌面端菜单 -->
       <div class="flex items-center ml-8 hidden md:flex">
